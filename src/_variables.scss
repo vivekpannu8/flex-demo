@@ -1,0 +1,39 @@
+$min-width: 600px;
+$main-navbar-height: 40px;
+$secondary-navbar-height: 70px;
+$side-panel-width: 350px;
+$statusbar-height: 30px;
+$padding-main: 20px;
+$margin-main: 10px;
+// General colors
+$accent-color: #4CAF50;
+$warning-color: #F0AD4E;
+$error-color: #D9534F;
+$border-color: #EAEAEA;
+$background-color-dark: #3E4B52;
+$background-color-light: #F7F7F7;
+$background-color-main: white;
+$disabled-color: #E5E5E5;
+$primary-font-dark: #212121;
+$primary-font-light: white;
+$font-disabled: #E5E5E5;
+$button-border-color: #C4C4C4;
+$primary-btn-background-color: $accent-color;
+$primary-btn-hover-color: #4A934A;
+$primary-btn-selected-color: #367A36;
+$error-btn-background-color: $error-color;
+$error-btn-hover-color: #BF4B4B;
+$error-btn-selected-color: #A53D3D;
+$warning-btn-background-color: $warning-color;
+$warning-btn-hover-color: #D8984A;
+$warning-btn-selected-color: #BC8140;
+$button-disabled-font-color: #8F8F8F;
+$secondary-btn-border-color: #C4C4C4;
+$light-header-background: #F1F1F1;
+$table-border-color: #DBDBDB;
+
+// Next Gen CDS specific
+$primary-color-dark: #276193;
+$primary-color: #068CC1;
+$primary-color-light: #9ADDF7;
+$selection-color: #DBEFFC;

@@ -1,0 +1,138 @@
+@import '../../variables.scss';
+
+$light-header-background: #F1F1F1;
+
+// wijmo header cells
+.wj-cell.wj-header {
+    background-color: $light-header-background;
+    color: $primary-font-dark;
+    vertical-align: middle;
+    border-bottom: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;    
+}
+
+// wijmo cells unless overridden
+.wj-cell {
+    font-family: 'Open Sans', sans-serif;    
+    font-size: 14px;
+    height: 41px;
+    line-height: 41px;
+    vertical-align: middle;
+    padding: 0px 18px;
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color; 
+    border-bottom:none;        
+}
+
+// individual cell selction
+.wj-state-selected {
+    background-color: $selection-color;
+    color: $primary-font-dark;
+    border: 1px solid $primary-color-dark;
+}
+
+// entire row selection
+.wj-state-multi-selected {
+    background-color: $selection-color;
+    color: $primary-font-dark;
+} 
+
+// individual cell parent when editing a specific cell
+.wj-input-group .wj-form-control, .wj-grid-editor {
+    background: $selection-color;;
+    color: $primary-font-dark;
+    height: 41px;
+    border: 1px solid $primary-color-dark;        
+}
+
+// parent of input control when editing
+.wj-cell .wj-grid-editor {
+    box-sizing: border-box;
+    padding: 3px 18px;
+    width: 100%;
+    margin: 0;
+    border: 1px solid $primary-color-dark;      
+}
+
+// following two styles sets the colors the rows in an alternating pattern
+.wj-cell:not(.wj-header):not(.wj-group):not(.wj-alt):not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: #FFFFFF;
+    color: $primary-font-dark;;
+}
+.wj-alt:not(.wj-header):not(.wj-group):not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: $background-color-light;
+    color: $primary-font-dark;
+}
+
+// row number style 
+div[wj-part='rhcells'] .wj-header
+{
+    padding: 0px;
+    vertical-align: middle;
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color; 
+    border-bottom:none;            
+}
+
+// following two styles sets the color of the rows in an alternating pattern
+.wj-rowheaders .wj-header:not(.wj-group):not(.wj-header-alt):not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: #FFFFFF;
+    color: $primary-font-dark;;
+}
+.wj-rowheaders .wj-header-alt:not(.wj-group):not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: $background-color-light;
+    color: $primary-font-dark;
+}
+
+// sets the styles for the table cell when in a a group (hierarchy)
+.wj-flexgrid .wj-cell .wj-group {
+    font-family: 'Open Sans', sans-serif;    
+    font-size: 14px;
+    height: 41px;
+    line-height: 41px;
+    vertical-align: middle;
+    padding: 0px 18px;
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color; 
+    border-bottom:none;        
+}
+
+
+// following two styles sets the color the row numbers in an alternating pattern for a gorup (hierarchy)
+.wj-flexgrid .wj-group:not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: #FFFFFF;
+    color: $primary-font-dark;;
+}
+
+.wj-flexgrid .wj-alt:not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: $background-color-light;
+    color: $primary-font-dark;
+}
+
+
+// Note: the following glyph may need a more specific selector if used in  other parts of wijmo
+// change the hierarchy closed symbol to a down arrow
+.wj-glyph-down-right {     
+    border-bottom: .5em solid;
+    border-right: .4em solid transparent;
+    border-left: .4em solid transparent;
+    border-top: transparent;
+    margin-right: 15px;
+}
+
+// Note: the following glyph may need a more specific selector if used in  other parts of wijmo
+// change the hierarchy open symbol to an up arrow
+.wj-glyph-right {
+    border-right: .4em solid transparent;
+    border-top: .5em solid;
+    border-left: .4em solid transparent;
+    border-bottom: transparent;
+    margin-right: 15px;             
+}
+
+// change the list box dropdown arrow in cell so arrow is solid color
+.wj-cell .wj-elem-dropdown  {
+    opacity: 1;
+}
+    

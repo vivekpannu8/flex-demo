@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <wat-flexgrid #compsflex id="tableComponents" selectionMode='MultiRange' [itemsSource]="data"
+        (beginningEdit)="onGridBeginningEdit(flex, $event)" (lostFocus)="isPageValid()" [enableCopyDown]="!isReadOnly"
+        [enableCopyRight]="false" (copyDownEnded)="onCopyDownEnded($event)" (cellEditEnded)="onCellEditEnded($event)"
+        [disableTableCellDict]="disableTableCellDict">
+    </wat-flexgrid>
+</div>
